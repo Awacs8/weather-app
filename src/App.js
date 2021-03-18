@@ -1,14 +1,13 @@
 import React from "react";
-import "./App.css";
-import Search from "./components/Search";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
       <header>
-        <h1>Check the current weather</h1>
+        <h2>Get informations about weather</h2>
       </header>
-      <Search />
+      <Main />
     </>
   );
 }
