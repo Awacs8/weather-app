@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://api.weatherapi.com/v1";
+const API_URL = "https://api.weatherapi.com/v1";
 
 export const getForecastInfo = async (city) => {
   return await axios.get(
