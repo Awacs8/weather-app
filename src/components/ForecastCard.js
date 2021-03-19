@@ -1,6 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import { Card, Image, CardSection } from "../utils/style";
+import { Card, Image, CardSection, Title } from "../utils/style";
 
 const ForecastCard = ({ day }) => {
   const chartLabels = [];
@@ -44,7 +44,7 @@ const ForecastCard = ({ day }) => {
       <CardSection>
         <div>
           <Image src={day.day.condition.icon} alt={"forecast-icon"} />
-          <p>{day.day.avgtemp_c}&deg;C</p>
+          <Title>{day.day.avgtemp_c}&deg;C</Title>
           <p>{day.day.condition.text}</p>
         </div>
         <div>
