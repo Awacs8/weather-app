@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as SearchIcon } from "../utils/search.svg";
+import { ReactComponent as SearchIcon } from "../utils/icon/search.svg";
 import { Form, Input, Button } from "../utils/style";
 
 const SearchForm = ({ handleClick }) => {
