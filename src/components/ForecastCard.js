@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 import { Line } from "react-chartjs-2";
 import { Card, Image, CardSection, Title } from "../utils/style";
 
@@ -40,7 +41,7 @@ const ForecastCard = ({ day }) => {
   };
   return (
     <Card>
-      <p>{day.date}</p>
+      <p>{moment(day.date).format("dddd MMM Do")}</p>
       <CardSection>
         <div>
           <Image src={day.day.condition.icon} alt={"forecast-icon"} />
