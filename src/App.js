@@ -1,12 +1,13 @@
 import React from "react";
 import Main from "./components/Main";
+import { Title } from "./utils/style";
 
 function App() {
   return (
     <>
-      <header>
-        <h2>Get informations about weather</h2>
-      </header>
+      <Title size="large">
+        Get informations about current weather and forecast
+      </Title>
       <Main />
     </>
   );

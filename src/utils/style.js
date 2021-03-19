@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
 export const Title = styled.h3`
-  font-size: 20px;
+  ${(props) => {
+    if (props.size === "small") {
+      return "font-size: 18px;";
+    } else if (props.size === "large") {
+      return "font-size: 35px;";
+    } else {
+      return "font-size: 22px;";
+    }
+  }}
 `;
+
 export const CardList = styled.div`
   display: flex;
 `;
@@ -10,19 +19,20 @@ export const Card = styled.section`
   margin: 10px auto;
   font-size: 18px;
   font-weight: 600;
-  border: white solid 2px;
+  border: 3px solid rgb(159, 104, 99, 0.6);
   width: 30%;
   background-color: rgb(136, 91, 94, 0.5);
 `;
-
-export const Image = styled.img`
-  height: 90px;
-  width: 90px;
+export const CardSection = styled(CardList)`
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-// export const Description = styled.article`
-//   float: left;
-// `;
+export const Image = styled.img`
+  height: 120px;
+  width: 120px;
+`;
 
 export const Form = styled.section`
   margin: 0 auto;
