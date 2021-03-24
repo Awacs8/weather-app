@@ -1,6 +1,6 @@
 import React from "react";
 import { CardList } from "../utils/style";
-import ForecastCard from "./ForecastCard";
+import ForecastCard from "../components/ForecastCard";
 
 const Forecast = ({ info }) => {
   return (

@@ -4,6 +4,7 @@ import { Card, Image, CardSection, Title } from "../utils/style";
 const WeatherCard = ({ info }) => {
   return (
     <Card>
+      <p>current weather</p>
       <Title>
         {info.location.name}, {info.location.region}, {info.location.country}
       </Title>
@@ -14,10 +15,10 @@ const WeatherCard = ({ info }) => {
         </div>
         <div>
           <Title size="large">{info.current.temp_c}&deg;C</Title>
-          <p>Humidity: {info.current.humidity}%</p>
-          <p>Pressure: {info.current.pressure_mb}mbar</p>
+          <p>Humidity: {info.current.humidity} %</p>
+          <p>Pressure: {info.current.pressure_mb} mbar</p>
           <p>
-            Wind: {info.current.wind_dir} {info.current.wind_kph}km/h
+            Wind: {info.current.wind_dir} {info.current.wind_kph} km/h
           </p>
         </div>
       </CardSection>

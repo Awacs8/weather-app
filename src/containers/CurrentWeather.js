@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherCard from "./WeatherCard";
+import WeatherCard from "../components/WeatherCard";
 
 const CurrentWeather = ({ info }) => {
   return (

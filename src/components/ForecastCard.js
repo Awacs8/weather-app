@@ -16,9 +16,9 @@ const ForecastCard = ({ day }) => {
         <div>
           <p>Min: {day.day.mintemp_c}&deg;C</p>
           <p>Max: {day.day.maxtemp_c}&deg;C</p>
-          <p>Humidity: {day.day.avghumidity}%</p>
-          <p>Chance of rain: {day.day.daily_chance_of_rain}%</p>
-          <p>Max wind: {day.day.maxwind_kph}km/h</p>
+          <p>Humidity: {day.day.avghumidity} %</p>
+          <p>Chance of rain: {day.day.daily_chance_of_rain} %</p>
+          <p>Max wind: {day.day.maxwind_kph} km/h</p>
         </div>
       </CardSection>
       <TemperatureChart day={day} />
