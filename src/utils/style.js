@@ -31,6 +31,10 @@ export const Card = styled.section`
   @media (max-width: 768px) {
     width: 80%;
   }
+  @media (max-width: 440px) {
+    border: 3px solid rgb(105, 105, 105, 0.6);
+    background-color: rgb(14, 14, 14, 0.6);
+  }
 `;
 export const CardSection = styled(CardList)`
   padding: 10px;
@@ -51,15 +55,17 @@ export const Image = styled.img`
   width: 120px;
 `;
 export const Form = styled.section`
-  margin: 0 auto;
-  padding: 30px;
+  display: flex;
+  aligh-items: center;
+  justify-content: center;
+  padding: 50px 5px;
 `;
 export const Input = styled.input`
   border: 3px solid rgb(159, 104, 99, 0.1);
   border-right: none;
   padding: 1px 2px;
   width: 60%;
-  height: 34px;
+  height: 44px;
   background-color: rgb(159, 104, 99, 0.1);
   font-size: 18px;
   color: white;
@@ -71,15 +77,27 @@ export const Input = styled.input`
   @media (max-width: 768px) {
     width: 80%;
   }
+  @media (max-width: 440px) {
+    border: 3px solid rgb(105, 105, 105, 0.6);
+    background-color: rgb(14, 14, 14, 0.6);
+    border-right: none;
+  }
 `;
 export const Button = styled.button`
+  display: inline-flex;
+  padding: 1px 4px;
+  height: 44px;
+  width: 44px;
   border: 3px solid rgb(159, 104, 99, 0.1);
-  padding: 1px 6px;
-  height: 34px;
-  width: 34px;
+  border-left: none;
   background-color: rgb(159, 104, 99, 0.1);
-  font-size: 18px;
   color: lightgrey;
   outline: none;
   cursor: pointer;
+  @media (max-width: 440px) {
+    border: 3px solid rgb(105, 105, 105, 0.6);
+    background-color: rgb(14, 14, 14, 0.6);
+    border-left: none;
+    padding-top: 2px;
+  }
 `;
