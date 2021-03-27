@@ -6,7 +6,7 @@ const WeatherCard = ({ info }) => {
     <Card>
       <p>current weather</p>
       <Title>
-        {info.location.name}, {info.location.region}, {info.location.country}
+        {info.location.name}, {info.location.country}
       </Title>
       <CardSection>
         <div>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { ReactComponent as SearchIcon } from "../utils/icon/search.svg";
+import { ReactComponent as LocationIcon } from "../utils/icon/current-location.svg";
+
 import { Form, Input, Button } from "../utils/style";
 
-const SearchForm = ({ handleClick }) => {
+const SearchForm = ({ searchByName, searchByGeolocation }) => {
   const [city, setCity] = useState("");
 
   return (
@@ -16,11 +18,14 @@ const SearchForm = ({ handleClick }) => {
       />
       <Button
         onClick={() => {
-          handleClick(city);
+          searchByName(city);
           setCity("");
         }}
       >
         <SearchIcon />
+      </Button>
+      <Button onClick={searchByGeolocation} title={"show by geolocation"}>
+        <LocationIcon />
       </Button>
     </Form>
   );
